@@ -18,6 +18,6 @@ local FrameworkRunner = workspace.FrameworkRunner
 local frameworkInstances = FrameworkRunner.Frameworks
 
 -- modules
-local findFrameworks = require(FrameworkRunner.modules.findFrameworks)
+local findFrameworks = require(FrameworkRunner.modules:WaitForChild("findFrameworks.luau"))
 
 findFrameworks.find(frameworksFolder)
